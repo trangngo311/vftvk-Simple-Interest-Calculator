@@ -4,6 +4,7 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = parseInt(document.getElementById("years").value);
     var interest = principal * years * rate / 100;
+    var amount = principal + interest;
     var year = new Date().getFullYear()+parseInt(years);
     var result = document.getElementById("result");
 
